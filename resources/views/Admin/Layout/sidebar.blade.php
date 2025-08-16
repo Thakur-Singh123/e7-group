@@ -3,7 +3,7 @@
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
             <a href="{{ url('admin/dashboard') }}" class="logo">
-              {{-- <img src="{{ asset('assets/img/kaiadmin/logo_light.svg') }}" alt="navbar brand" class="navbar-brand" height="20"> --}}
+              {{-- <img src="{{ asset('public/assets/img/kaiadmin/logo_light.svg') }}" alt="navbar brand" class="navbar-brand" height="20"> --}}
               <h2 style="color:#fff;font-size: 16px;">Forecast Dashboard</h2>
             </a>
             <div class="nav-toggle">
