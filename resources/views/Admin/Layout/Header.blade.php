@@ -3,7 +3,7 @@
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
               <a href="index.html" class="logo">
-                  <img src="{{ asset('assets/img/kaiadmin/logo_light.svg') }}" alt="navbar brand" class="navbar-brand"
+                  <img src="{{ asset('public/assets/img/default.png') }}" alt="navbar brand" class="navbar-brand"
                       height="20" />
               </a>
               <div class="nav-toggle">
@@ -43,7 +43,7 @@
                       <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#"
                           aria-expanded="false">
                           <div class="avatar-sm">
-                              <img src="{{ asset('assets/img/profile.jpg') }}" alt="..."
+                              <img src="{{ asset('public/assets/img/default.png') }}" alt="..."
                                   class="avatar-img rounded-circle" />
                           </div>
                           <span class="profile-username">
