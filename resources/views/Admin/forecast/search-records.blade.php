@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <!-- resources/views/Admin/your-view.blade.php -->
+                    <!--resources/views/Admin/your-view.blade.php -->
                     <div class="card-header">
                         <h4 class="card-title">Search records</h4>
                         <div class="filter-section mt-3">

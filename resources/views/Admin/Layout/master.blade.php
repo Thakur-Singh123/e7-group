@@ -9,11 +9,10 @@
     />
     <link
       rel="icon"
-      href="{{ asset('public/assets/img/kaiadmin/favicon.ico') }}"
+      href="{{ asset('public/assets/img/header_logo.png') }}"
       type="image/x-icon"
     />
-
-    <!-- Fonts and icons -->
+    <!--Fonts and icons-->
     <script src="{{ asset('public/assets/js/plugin/webfont/webfont.min.js') }}"></script>
     <script>
       WebFont.load({
@@ -32,106 +31,96 @@
         },
       });
     </script>
-
-    <!-- CSS Files -->
+    <!--CSS Files-->
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-lite.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('public/assets/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('public/assets/css/plugins.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('public/assets/css/kaiadmin.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('public/assets/css/custom.css') }}" />
-
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link rel="stylesheet" href="{{ asset('public/assets/css/demo.css') }}" />
   </head>
   <body>
     <div class="wrapper">
-      <!-- Sidebar -->
-      @include('Admin.Layout.sidebar')
-      <!-- End Sidebar -->
-      <div class="main-panel">
-       <!----header-->
-       @include('Admin.Layout.Header')
-        <div class="container">
-        <!---yield content-->
-        @yield('content')
+        <!-- Sidebar -->
+        @include('Admin.Layout.sidebar')
+        <!-- End Sidebar -->
+        <div class="main-panel">
+          <!----header-->
+          @include('Admin.Layout.Header')
+          <div class="container">
+              <!---yield content-->
+              @yield('content')
+          </div>
+          <!--footer-->
+          @include('Admin.Layout.footer')
         </div>
-        <!--footer-->
-        @include('Admin.Layout.footer')
-      </div>
-
-
     </div>
     <!--   Core JS Files   -->
     <script src="{{ asset('public/assets/js/core/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/core/popper.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/core/bootstrap.min.js') }}"></script>
-
     <!-- jQuery Scrollbar -->
     <script src="{{ asset('public/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
-<!-- Chart.js -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<!-- Chart.js DataLabels plugin -->
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
-
-<!-- Circles.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/circles/0.0.6/circles.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js DataLabels plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <!-- Circles.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/circles/0.0.6/circles.min.js"></script>
     <!-- jQuery Sparkline -->
     <script src="{{ asset('public/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js') }}"></script>
-
-
-
     <!-- Datatables -->
     <script src="{{ asset('public/assets/js/plugin/datatables/datatables.min.js') }}"></script>
-
     <!-- Bootstrap Notify -->
     {{-- <script src="{{ asset('public/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js') }}"></script> --}}
-
     <!-- jQuery Vector Maps -->
     <script src="{{ asset('public/assets/js/plugin/jsvectormap/jsvectormap.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/plugin/jsvectormap/world.js') }}"></script>
-
     <!-- Sweet Alert -->
     <script src="{{ asset('public/assets/js/plugin/sweetalert/sweetalert.min.js') }}"></script>
-
     <!-- Kaiadmin JS -->
     <script src="{{ asset('public/assets/js/kaiadmin.min.js') }}"></script>
-
     <!-- Kaiadmin DEMO methods, don't include it in your project! -->
     <script src="{{ asset('public/assets/js/setting-demo.js') }}"></script>
     <script src="{{ asset('public/assets/js/demo.js') }}"></script>
-       <script>
-      // $(document).ready(function () {
-      //   $("#basic-datatables").DataTable({});
-      //   });
-      
-        </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-lite.min.js"></script>
     <script>
-      $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
-        type: "line",
-        height: "70",
-        width: "100%",
-        lineWidth: "2",
-        lineColor: "#177dff",
-        fillColor: "rgba(23, 125, 255, 0.14)",
-      });
-
-      $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
-        type: "line",
-        height: "70",
-        width: "100%",
-        lineWidth: "2",
-        lineColor: "#f3545d",
-        fillColor: "rgba(243, 84, 93, .14)",
-      });
-
-      $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
-        type: "line",
-        height: "70",
-        width: "100%",
-        lineWidth: "2",
-        lineColor: "#ffa534",
-        fillColor: "rgba(255, 165, 52, .14)",
-      });
+        // $(document).ready(function () {
+        //   $("#basic-datatables").DataTable({});
+        //   });
+        
+          
+    </script>
+    <script>
+        $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
+          type: "line",
+          height: "70",
+          width: "100%",
+          lineWidth: "2",
+          lineColor: "#177dff",
+          fillColor: "rgba(23, 125, 255, 0.14)",
+        });
+        
+        $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
+          type: "line",
+          height: "70",
+          width: "100%",
+          lineWidth: "2",
+          lineColor: "#f3545d",
+          fillColor: "rgba(243, 84, 93, .14)",
+        });
+        
+        $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
+          type: "line",
+          height: "70",
+          width: "100%",
+          lineWidth: "2",
+          lineColor: "#ffa534",
+          fillColor: "rgba(255, 165, 52, .14)",
+        });
     </script>
   </body>
 </html>
